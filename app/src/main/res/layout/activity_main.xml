@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/input_powerLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="in W"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/input_apiKey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.963"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/input_apiKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Api Key"
+        android:inputType="textNoSuggestions"
+        app:layout_constraintBottom_toTopOf="@+id/input_siteId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/input_siteId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="176dp"
+        android:ems="10"
+        android:hint="Site Id"
+        android:inputType="textNoSuggestions"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="210dp"
+        android:layout_height="44dp"
+        android:text="Power Limit:"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/input_powerLimit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.795"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_siteId"
+        app:layout_constraintVertical_bias="0.567" />
+
+    <Button
+        android:id="@+id/btn_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Manually"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_confirm"
+        app:layout_constraintHorizontal_bias="0.705"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_siteId"
+        app:layout_constraintVertical_bias="0.567" />
+
+    <TextView
+        android:id="@+id/tv_cons"
+        android:layout_width="213dp"
+        android:layout_height="33dp"
+        android:text="0 kW Consumption"
+        android:textColor="@color/red_light"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_prod"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_prod"
+        android:layout_width="212dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="204dp"
+        android:text="0 kW Production"
+        android:textColor="@color/green_light"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/tv_cons"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cons"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/iv_status"
+        android:layout_width="258dp"
+        android:layout_height="176dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_prod"
+        app:layout_constraintVertical_bias="0.462"
+        app:srcCompat="@drawable/ic_unknown" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

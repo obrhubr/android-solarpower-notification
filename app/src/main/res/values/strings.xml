@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Solar Edge Notification</string>
+    <string name="channel_description">Solar Edge Alerts</string>
+</resources>

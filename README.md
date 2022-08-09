@@ -1,6 +1,6 @@
 # Android-solarpower-notification
 
-I coded this app to make charging the electric vehicle easier. The app sends you a notification as soon as your solar panels produce enough power to charge the car and sends you another one if the power produced drops below. The information about the panels is retrieved from the manufacturers(SolarEdge) api.
+I created this app to make charging your electric vehicle easier. The app sends you a notification as soon as your solar panels produce enough power to charge the car and sends you another one if the power produced drops below. The information about the panels is retrieved from the manufacturers(SolarEdge) api.
 
 ### Usage
 The screen you are presented with when opening the app for the first time might look similar to this:
